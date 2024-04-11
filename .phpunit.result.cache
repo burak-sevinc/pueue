@@ -1,0 +1,1 @@
+{"version":1,"defects":{"BurakSevinc\\Pueue\\Tests\\QueueTest::deleteSendAndReceiveSuccessfully":4,"BurakSevinc\\Pueue\\Tests\\SqsQueueTest::deleteSendAndReceiveSuccessfully":4},"times":{"BurakSevinc\\Pueue\\Tests\\QueueTest::deleteSendAndReceiveSuccessfully":2.336,"BurakSevinc\\Pueue\\Tests\\SqsQueueTest::deleteSendAndReceiveSuccessfully":1.187}}
