@@ -478,3 +478,5 @@ composer.lock
 # Env
 .env
 
+.phpunit.result.cache
+
