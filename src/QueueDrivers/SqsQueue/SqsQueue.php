@@ -2,9 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BurakSevinc\Pueue;
+namespace BurakSevinc\Pueue\QueueDrivers\SqsQueue;
 
 use Aws\Sqs\SqsClient;
+use BurakSevinc\Pueue\Queue;
 use Throwable;
 
 class SqsQueue implements Queue

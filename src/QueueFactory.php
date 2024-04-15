@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace BurakSevinc\Pueue;
 
 use Aws\Sqs\SqsClient;
+use BurakSevinc\Pueue\QueueDrivers\SqsQueue\SqsQueue;
 use RuntimeException;
 
 use function in_array;

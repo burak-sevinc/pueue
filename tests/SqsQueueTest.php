@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace BurakSevinc\Pueue\Tests;
 
+use BurakSevinc\Pueue\QueueDrivers\SqsQueue\SqsQueue;
 use BurakSevinc\Pueue\QueueFactory;
 use BurakSevinc\Pueue\QueueService;
-use BurakSevinc\Pueue\SqsQueue;
 use PHPUnit\Framework\TestCase;
 
 class SqsQueueTest extends TestCase
@@ -14,7 +14,7 @@ class SqsQueueTest extends TestCase
     private SqsQueue $queue;
     private QueueService $queueService;
 
-    private const QUEUE_URL = ''; // Add your SQS queue URL here
+    private const QUEUE_URL = 'https://sqs.eu-north-1.amazonaws.com/637423278307/LogQueue'; // Add your SQS queue URL here
 
     protected function setUp(): void
     {
