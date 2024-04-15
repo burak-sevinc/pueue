@@ -11,10 +11,12 @@
     },
     "authors": [
         {
-            "name": "Burak SevinC"
+            "name": "Burak Sevinc",
+            "email": "info@buraksevinc.dev"
         }
     ],
     "require": {
+        "php": "^7.4 || ^8.0",
         "php-di/php-di": "^7.0",
         "aws/aws-sdk-php": "^3.304",
         "vlucas/phpdotenv": "^5.6"
@@ -28,5 +30,8 @@
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit tests"
     }
 }
