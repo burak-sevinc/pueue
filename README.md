@@ -38,6 +38,7 @@ Now you can use the QueueService to interact with the queue:
     $messages = $queueService->receiveAll();  
       
     // Delete a message  
+    $receiptHandle = $message['receiptHandle'];
     $queueService->delete($receiptHandle);  
       
     // Delete all messages  
