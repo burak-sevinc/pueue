@@ -1,9 +1,7 @@
 # Pueue - PHP Simple Queue
 
-This package, Pueue, is a flexible PHP library for managing queues. It currently supports AWS SQS and plans to extend
+Pueue, is a flexible PHP library for managing queues. It currently supports AWS SQS and plans to extend
 support to Database and Redis queues. It provides an easy-to-use API for sending, receiving, and deleting messages.
-
-# Documentation
 
 ## Installation
 
