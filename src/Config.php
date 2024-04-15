@@ -32,11 +32,10 @@ class Config
         throw new RuntimeException('Could not find .env file');
     }
 
-    /** @param null $default */
-    public static function get(string $key, $default = null): mixed
+    public static function get(string $key): mixed
     {
         self::load();
 
-        return $_ENV[$key] ?? $default;
+        return $_ENV[$key] ?? null;
     }
 }
