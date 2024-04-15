@@ -5,7 +5,7 @@ support to Database and Redis queues. It provides an easy-to-use API for sending
 
 ## Installation
 
-This package can be installed via Composer:
+with Composer:
 
     composer require burak-sevinc/pueue  
 
@@ -66,4 +66,4 @@ You can run the tests with:
 
 ## License
 
-This package is open-sourced software licensed under the **MIT** license.
+**Pueue** is open-sourced software licensed under the **MIT** license.
