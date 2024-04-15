@@ -14,6 +14,7 @@ This package can be installed via Composer:
 ## Usage
 
 First, you need to create a Queue instance. You can use the QueueFactory for this:
+
 ```php
     use BurakSevinc\Pueue\QueueFactory;
     $queue = QueueFactory::create($queueUrl);  
@@ -27,6 +28,7 @@ Then, you can create a QueueService instance with the Queue instance:
 ```
 
 Now you can use the QueueService to interact with the queue:
+
 ```php
     // Send a message  
     $queueService->send('Hello, world!');  
@@ -47,18 +49,22 @@ Now you can use the QueueService to interact with the queue:
 ## Configuration
 
 The QueueFactory uses the Config class to get configuration values. You need to set the following configuration values:
+
 ```
     QUEUE_DRIVER: The type of queue to use. Currently, only 'sqs' is supported.  
     AWS_REGION: The AWS region for SqsQueue.  
     AWS_ACCESS_KEY_ID: The AWS access key ID for SqsQueue.  
     AWS_SECRET_ACCESS_KEY: The AWS secret access key for SqsQueue.  
 ```
+
 ## Testing
 
 You can run the tests with:
+
 ```php
-    vendor/bin/phpunit  
+    composer test
 ```
+
 ## License
 
 This package is open-sourced software licensed under the **MIT** license.
