@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace BurakSevinc\Pueue;
 
 use Dotenv\Dotenv;
-use Exception;
 use RuntimeException;
 use Throwable;
 
@@ -17,7 +16,6 @@ class Config
     {
     }
 
-    /** @throws Exception */
     private static function load(): void
     {
         $maxAttempts = 5;
@@ -34,11 +32,7 @@ class Config
         throw new RuntimeException('Could not find .env file');
     }
 
-    /**
-     * @param null $default
-     *
-     * @throws Exception
-     */
+    /** @param null $default */
     public static function get(string $key, $default = null): mixed
     {
         self::load();

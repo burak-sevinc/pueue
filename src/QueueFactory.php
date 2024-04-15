@@ -7,12 +7,20 @@ namespace BurakSevinc\Pueue;
 use Aws\Sqs\SqsClient;
 use RuntimeException;
 
+use function in_array;
+
 class QueueFactory
 {
+    private const ALLOWED_DRIVERS = ['sqs'];
+
     public static function create(string|null $queueUrl = null): Queue
     {
         $queueDriver = Config::get('QUEUE_DRIVER');
         if ($queueDriver === null) {
+            throw new RuntimeException('Queue driver not supported');
+        }
+
+        if (! in_array($queueDriver, self::ALLOWED_DRIVERS, true)) {
             throw new RuntimeException('Queue driver not supported');
         }
 
@@ -23,6 +31,8 @@ class QueueFactory
 
             return self::createSqsQueue($queueUrl);
         }
+
+        throw new RuntimeException('Queue cannot be created');
     }
 
     private static function createSqsQueue(string $queueUrl): Queue
