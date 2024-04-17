@@ -1,3 +1,7 @@
+![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/burak-sevinc/pueue/badges/quality-score.png?b=main)
+![Scrutinizer Build](https://scrutinizer-ci.com/g/burak-sevinc/pueue/badges/build.png?b=main)
+![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/burak-sevinc/pueue/badges/coverage.png?b=main)
+
 # Pueue - PHP Simple Queue
 
 Pueue, is a flexible PHP library for managing queues. It currently supports AWS SQS and plans to extend
